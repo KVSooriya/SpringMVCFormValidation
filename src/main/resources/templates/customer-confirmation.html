@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Confirmation</title>
+</head>
+<body>
+<h3>Customer details</h3>
+Customer Name : <span th:text="${customer.firstName} + ' ' + ${customer.lastName}"></span>
+<br>
+Age : <span th:text="${customer.age}"></span>
+<br>
+Postal Code : <span th:text="${customer.postalCode}"></span>
+<br>
+Course Code : <span th:text="${customer.course}"></span>
+<br>
+Phone Number : <span th:text="${customer.phoneNumber}"></span>
+</body>
+</html>
